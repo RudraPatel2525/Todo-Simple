@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Todo List</title>
+</head>
+<body>
+    <h1 class="heading">Note-Vote</h1>
+
+    <section class="card nv-card shadow mx-auto">
+      <div class="accordion" id="authAcc">
+
+        <button class="accordion-button" type="button"
+          data-bs-toggle="collapse" data-bs-target="#logoutPanel"
+          aria-expanded="true" aria-controls="logoutPanel">
+          <span class="me-2">⚙</span>
+          <span>Logged in as <strong id="CurrentUserLabel">User A</strong></span>
+        </button>
+
+        <div id="logoutPanel" class="collapse show">
+          <div class="btn-group text-center py-3">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Switch User
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item Users" href="#" data-user="User A">User A</button></li>
+              <li><button class="dropdown-item Users" href="#" data-user="User B">User B</button></li>
+              <li><button class="dropdown-item Users" href="#" data-user="User C">User C</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="card nv-card shadow mx-auto todolist">
+        <div id="notesList"></div>
+        <div class="input-group mt-2">
+          <input class="form-control" type="text" placeholder="Enter a new note here" id="noteText" />
+          <button class="btn btn-outline-secondary" id="addNoteButton" type="button">Add</button>
+        </div>
+
+    </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+.heading {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-weight: 400;
+}
+
+.nv-card {
+  background: #edf7fe;
+  border: 1px solid #d3dee6;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.20);
+  text-align: center;
+  min-width: 25em;
+  max-width: 420px;
+}
+
+.sub-heading {
+  font-weight: normal;
+}
+
+.logout-btn {
+  margin: 20px 0px 8px 0;
+}
+
+.todolist {
+  padding : 5px;
+  margin: 20px 0px 8px 0;
+  min-width: 35em;
+}
+
+.todo-text{
+  margin-bottom: 20px
+}
+
+.todolist.nv-card {
+  max-width: 700px;
+  padding: 10px;
+}
+
+.todo-text input {
+  background: #f5f7fa;
+}
